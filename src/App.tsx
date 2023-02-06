@@ -21,7 +21,6 @@ const App = () => {
   useEffect(() => {
     //We Pass state like monstors or a props if we need to rerunder the function
     //otherwise leve it empty the useEffect is run only one.
-
     const fetchUser = async () => {
       const user = await getData<Monstor[]>(
         "https://jsonplaceholder.typicode.com/users"
